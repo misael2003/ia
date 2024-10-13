@@ -1,0 +1,167 @@
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('path/to/Gotham-Book.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('path/to/Gotham-Medium.ttf') format('truetype');
+}
+body {
+    font-family: 'Gotham Book', Arial, sans-serif;
+    color: #5B6670;
+}
+
+/*Estilizamos la barra de navegacion*/
+
+    .navegacion{
+        background-color: #e51515;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #titulo{
+        font-size: 45px;
+        color: white;
+        font-family:  "Work Sans", sans-serif;
+        margin-top: 15px;
+    }
+    .navContenido{
+        margin-left: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #logo{width: 100px;}
+    #divLogo{
+        border-radius: 35%;
+        shape-outside: circle();
+        clip-path: circle();
+    }
+    #navNavegacion{
+        margin-top: 65px;
+        margin-left: 100px;
+        font-size: 20px;
+
+    }
+    #colorNav{
+        color: white;
+        font-size: 25px;
+        margin: 20px;
+    }
+    a{text-decoration: none;}
+   
+/* Custom styles for the chatbot interface */
+    #contenido {
+        margin-top: 40px;
+        padding: 30px;
+        width: 100%;
+    }
+    .chatbot-interface {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+    .chatbot-input {
+        margin-top: 20px;
+    }
+    #chatbot-messages{
+        height: 400px; 
+        overflow-y: auto;
+    }
+    .row{width: 100%;}
+    /* Input field styles */
+    input[type="text"], input[type="password"], select {
+        background-color: #F6F6F6;
+        font-family: 'Gotham Book';
+        font-size: 15px;
+        color: #5B6670;
+        border: none;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    input[type="text"]:disabled, input[type="password"]:disabled, select:disabled {
+        color: #C1C5C8;
+    }
+    .error-message {
+        font-family: 'Gotham Book';
+        font-size: 12px;
+        color: #EB0029;
+    }
+    .error-message .icon {
+        color: #323E48;
+    }
+    /* Dropdown styles */
+    select {
+        font-family: 'Gotham Book';
+        font-size: 14px;
+        color: #5B6670;
+    }
+    select .icon {
+        color: #323E48;
+    }
+    /* Button styles */
+    .btn-primary {
+        font-family: 'Gotham Medium';
+        font-size: 15px;
+        color: #FFFFFF;
+        background-color: #EB0029;
+        border: none;
+        padding: 4px 30px;
+        height: 45px;
+        margin-left: 15px;
+    }
+    .btn-primary:hover {
+        background-color: #DB0026;
+    
+    }
+    .btn-secondary {
+        font-family: 'Gotham Medium';
+        font-size: 15px;
+        color: #323E48;
+        background-color: transparent;
+        border: 1px solid #323E48;
+        padding: 4px 30px;
+        height: 45px;
+    }
+    .btn-secondary:hover {
+        background-color: #DB0026;
+        color: #FFFFFF;
+    }
+    .btn-secondary:disabled {
+        color: #A2A9AD;
+        background-color: #CFD2D3;
+    }
+    .btn-tertiary {
+        font-family: 'Gotham Medium';
+        font-size: 15px;
+        color: #323E48;
+        background-color: transparent;
+        border: none;
+    }
+    .btn-tertiary:hover {
+        color: #DB0026;
+    }
+    .financial-data{
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+
+    .textoUsuario{
+        margin-top: 12px;
+        color: black;
+    }
+    input{
+        font-size: 200px;
+    }
+
+/*footer*/
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 100%;
+    bottom: 0;
+}

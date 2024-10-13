@@ -1,0 +1,20 @@
+{
+  "name": "ia",
+  "version": "1.0.0",
+  "description": "Hackaton",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "author": "toros",
+    "license": "ISC"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "openai": "^4.67.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/inicio.css">
+    <title>Banorte</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+        <nav class="navegacion">
+            <div class="navContenido" id="divLogo"><img src="IMG/logo.png" alt="BANORTE" id="logo"></div>
+            <div class="navContenido"><h2 id="titulo">BANORTE</h2></div>
+            <div class="navContenido" id="navNavegacion">
+              <ul>
+                <a href="#" id="colorNav">Iniciar sesión</a>
+                <a href="#" id="colorNav">Registrarse</a>
+                <a href="#" id="colorNav">Asistente virtual</a>
+              </ul>
+            </div>
+          </nav>
+    
+    <div class="container-fluid mx-auto" id = "contenido">
+        <div class="row">
+            <!-- Sección izquierda: Interfaz de chatbot -->
+            <div class="col-md-6 left-section">
+                <div class="chatbot-interface">
+                    <div id="chatbot-messages"></div>
+                    <!-- Mensajes del chatbot -->
+                </div>
+                <div class="chatbot-input">
+                    <div class="input-group">
+                        <input type="text"  id="chatbot-input" class="form-control" placeholder="Escribe tu pregunta..." style="height: 100%;">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" onclick="sendMessage()" style="height: 40px;">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" id="formulario">
+
+                <center><h4>ATENCIÓN PERSONALIZADA</h4></center>
+                <br>
+
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Edad</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Correo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2024 Banorte</p>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="JS/inicio.js"></script>
+</body>
+</html>
